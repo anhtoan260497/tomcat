@@ -1,0 +1,120 @@
+.tokenomics-container {
+    max-width: 1440px;
+    padding: 20px 2%;
+    margin: auto;
+    color: white;
+
+    h3 {
+        text-align: center;
+        font-size: 52px;
+        font-weight: 600;
+    }
+
+    .tokenomics-progress {
+        max-width: 900px;
+        margin: auto;
+        border: 2px solid black;
+        border-style: double;
+        border-width: 4px;
+        padding: 10px;
+        display: flex;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: white;
+
+        div[aria-label="progressbar"] {
+            width: 75%;
+        }
+
+
+        .tokenomics-progress-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .overflow-hidden {
+                background-color: black;
+                border: 2px solid white;
+                height: 14px;
+
+                div {
+                    height: 100%;
+                }
+            }
+
+        }
+
+        .tokenomics-progress-contract {
+            color: black;
+            text-align: center;
+            font-weight: 900;
+            font-size: 32px;
+
+            p {
+                border: 2px solid black;
+                border-style: double;
+                border-width: 4px;
+                padding: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 10px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+
+        .tokenomics-swap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap : 20px;
+            img {
+                width: 150px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 769px) {
+    .tokenomics-container {
+
+        h3 {
+            font-size: 34px;
+        }
+
+        .tokenomics-progress {
+            flex-direction: column;
+
+
+            .tokenomics-progress-item {
+                align-items: flex-start;
+                flex-direction: column;
+
+                div[aria-label="progressbar"] {
+                    width: 100%;
+                }
+            }
+
+            .tokenomics-progress-contract {
+                font-size: 28px;
+    
+                p {
+                    padding: 4px ;
+                    font-size: 13px;
+                }
+            }
+    
+            .tokenomics-swap {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

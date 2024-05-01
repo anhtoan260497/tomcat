@@ -1,0 +1,124 @@
+.header-container-fluid {
+    padding : 0 2%;
+    position: fixed;
+    width: 100%;
+    background-color: #626B93;
+    border-bottom: 2px solid white;
+
+    .header-container {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding : 10px 0;
+
+
+        img {
+            width: 100px;
+        }
+
+        .header-menu {
+            display: flex;
+            justify-content: space-between;
+            width: calc((100% / 12) * 10);
+            font-size: 18px;
+            font-weight: 800;
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: rgb(223, 223, 223);
+                }
+            }
+
+            .header-button {
+                padding : 5px 10px;
+                border-width: 2px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all .4s ease ;
+                &:hover {
+                    color : #626B93;
+                    background-color: white;
+                    border-color: transparent;
+                    transition: all .4s ease ;
+                }
+            }
+        }
+
+        .header-mobile-menu, .header-mobile-button {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width : 769px) {
+    .header-container-fluid {
+        .header-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+    
+            .header-menu {
+               display: none;
+            }
+
+            .header-mobile-menu {
+                display: block;
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                right: -70%;
+                top : 0;
+                border-left:3px solid white;
+                border-style: dashed;
+                min-height: 100%;
+                background-color: #626B93;
+                padding : 20px 10px;
+                color: white;
+                font-size: 20px;
+                transition: right .5s ease;
+                
+                a {
+                    text-align: left;
+                    margin: 10px;
+                    font-weight: 800;
+
+                    &:last-child {
+                        padding : 5px 10px;
+                        border-width: 2px;
+                        border-radius: 10px;
+                        text-align: center;
+                    }
+                }
+
+                .header-mobile-menu-close {
+                    align-self: flex-end;
+                    font-size: 30px;
+                    color :white;
+                }
+            }
+
+            .header-mobile-menu-active {
+                right : 0;
+                transition: right .5s ease;
+            }
+
+            .header-mobile-button {
+                position: absolute;
+                right: 40px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
