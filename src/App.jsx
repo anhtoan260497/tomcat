@@ -1,22 +1,28 @@
-import React from "react";
+import React, { lazy } from "react";
 import Header from "../components/Header";
 import './App.scss'
-import TopPage from "../components/TopPage";
-import MiddleDescription from "../components/MiddleDescription";
-import WhyChoose from "../components/WhyChoose";
-import Tokenomics from "../components/Tokenomics";
-import Phase from "../components/Phase";
-import Partner from "../components/Partners/Partner";
-import Footer from "../components/Footer";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
+const TopPage = lazy(() => import("../components/TopPage"))
+const MiddleDescription = lazy(() => import("../components/MiddleDescription"));
+const WhyChoose = lazy(() => import("../components/WhyChoose"));
+const Tokenomics = lazy(() => import("../components/Tokenomics"));
+const Phase = lazy(() => import("../components/Phase"));
+const Partner = lazy(() => import("../components/Partners/Partner"));
+const Footer = lazy(() => import("../components/Footer"));
 
 
 const App = () => {
+  Aos.init({
+    once : true
+  })
 
   return (
     <div>
       <Header />
       <div className="clear"></div>
-      <TopPage />
+      <TopPage  />
       <MiddleDescription />
       <WhyChoose />
       <Tokenomics />

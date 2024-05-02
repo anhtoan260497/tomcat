@@ -51,7 +51,7 @@ function Tokenomics(props) {
     }
 
     return (
-        <div id='tokenomics' className='tokenomics-container'>
+        <div id='tokenomics' data-aos="fade-up" className='tokenomics-container'>
             <h3>TOKENOMICS</h3>
             <div className='tokenomics-progress'>
                 {renderTokenomics()}

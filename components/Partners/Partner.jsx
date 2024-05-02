@@ -25,7 +25,7 @@ function Partner(props) {
         })
     }
     return (
-        <div className='partner-container'>
+        <div className='partner-container' data-aos="fade-up">
             <h3>OUR PARTNERS</h3>
             <div className='partners'>
                 {renderPartners()}

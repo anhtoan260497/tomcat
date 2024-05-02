@@ -7,7 +7,7 @@ MiddleDescription.propTypes = {
 
 function MiddleDescription(props) {
     return (
-        <div id='middle' className='middle-description-container'>
+        <div id='middle' className='middle-description-container' data-aos="fade-up">
             <p>🐱 Inspired by the mischievous yet beloved Tom the cat, <span>TomWifHat</span> Token is here to bring laughter and fun to the crypto community!</p>
 
             <p>🎩 <span>#TomWifHat</span> - Get ready for the next big thing in the crypto world!</p>

@@ -49,7 +49,7 @@ const renderPhases = () => {
 
 
     return (
-        <div id='roadmap' className='why-choose-container'>
+        <div id='roadmap' data-aos="fade-up" className='why-choose-container'>
             <h3>PHASE</h3>
             <div className='why-choose phase-container'> 
             <img src='https://i.ibb.co/d2gDJZf/tom2.jpg' alt='tom3' />

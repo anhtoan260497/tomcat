@@ -7,7 +7,7 @@ TopPage.propTypes = {
 
 function TopPage(props) {
     return (
-        <div className="top-container-fluid">
+        <div data-aos="fade-up" className="top-container-fluid">
             <div className='top-container'>
                 <img src='https://i.ibb.co/t27B2By/tom3.jpg' alt='tom-cat' />
                 <div className='top-flex'>
